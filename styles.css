@@ -315,33 +315,54 @@
 
 /* Tablet: cambios visibles */
 @media (min-width: 768px) {
+  #header, .page, .hero, #services, .success, .plans, .blog, .contact, #footer{
+    padding:0 4rem 0;
+    margin:0;
+  }
   #header{
     display: flex;
-    flex-direction: row;
-    padding: 18px 0;
+    padding-top: 18px;
+    width:100%;
   }
-  .brand{
-    width:18rem;
+  .nav{margin-left: auto;}
+  .nav__list-item{font-size: 13px;}
+  .cta{
+    display: flex;
+    margin-top: auto;
   }
-  .brand__logo{
-    width:50px;
+  .cta__btn{
+    display: flex;
+    height: 80px;
+    width: 120px;
+    line-height: 60px;
+  }
+  .hero__actions{
+    display: flex;
+    justify-content: center;
+  }
+  .cta__btn{
+    line-height: 1rem;
+    width:12rem;
+    text-align: center;
     height: 50px;
   }
+  .brand{
+    width:20rem;
+  }
+  .brand__logo{
+    width:70px;
+    height: 70px;
+  }
   .brand__logo-text{
-    margin:auto;
-    line-height: 50px;
+    line-height: 65px;
+    text-align: center;
+    font-size: 35px;
   }
   .brand__name{
     font-size: 20px;
   }
   .brand__tag{
     font-size: 15px;
-  }
-  .nav{margin-left: auto;}
-  .nav__list-item{font-size: 13px;}
-
-  .hero__grid {
-    display: block;
   }
 
   .cards, .cases, .posts {
@@ -353,10 +374,15 @@
 }
 
 /* Escritorio: layout más “pro” sin enseñar flex/grid a fondo */
-/*
+
 @media (min-width: 1024px) {
+  #header, .page, .hero, #services, .success, .plans, .blog, .contact, #footer{
+    padding:0 4rem 0;
+    margin:0;
+  }
   #header{
     display: flex;
+    width: 100%;
   }
   .brand__name{
     font-size: 20px;
@@ -367,7 +393,7 @@
 
 
   /* layout 2 columnas (sin grid; usando inline-block) */
-  /*
+
   .hero__copy, .hero__card {
     display: inline-block;
     vertical-align: top;
@@ -413,4 +439,4 @@
     margin-right: 2%;
   }
   .footer__grid > div:last-child { margin-right: 0; }
-} */
+} 
